@@ -9,7 +9,7 @@ import Hello2 from "./components/hello2";
 import * as serviceWorker from './serviceWorker';
 
 const routing = (
-    <Router>
+    <Router basename="/v2">
         <div>
             <ul>
                 <li>
@@ -21,6 +21,7 @@ const routing = (
                 <li>
                     <Link to="/hello2">Contact</Link>
                 </li>
+                <li><a href="/">Jinja Template</a></li>
             </ul>
             <Route exact path="/" component={App} />
             <Route path="/hello1" component={Hello1} />
