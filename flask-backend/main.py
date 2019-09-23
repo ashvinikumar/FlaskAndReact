@@ -3,7 +3,7 @@ from flask import render_template, Flask
 app = Flask("__main__")
 
 @app.route("/")
-def jinja_index():
+def jinja_index1():
     kwargs = {'some_string': "This is some string"}
     return render_template("jinja_template.html", **kwargs)
 
